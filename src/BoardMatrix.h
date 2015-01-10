@@ -25,8 +25,6 @@ struct Print_error
 	};
 typedef struct Print_error print_error;
 
-void debug(const char * msg);
-
 int** buildBoardMatrix();
 
 void copyBoardsMatrix(int** fromBoardMatrix, int** toBoardMatrix);

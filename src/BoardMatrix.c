@@ -1,4 +1,5 @@
 #include "BoardMatrix.h"
+#include "utils.h"
 
 //this function builds the matrix
 int** buildBoardMatrix()
@@ -83,8 +84,12 @@ bool is_full(int** mat){
 	return true;
 }
 
+
 void debug(const char * msg)
 {
-	printf( "[debug] %s\n", msg);
+	if(_debug)
+	{
+		printf( "[debug] %s\n", msg);
+	}
 }
 

@@ -1,4 +1,5 @@
 #include "Connect4.h"
+#include "utils.h"
 
 
 /*Initialize the Global Variables*/
@@ -62,6 +63,8 @@ int empty_command(char * c)
 
 int main()
 {
+	_debug = true;
+
 	current_mode = MODE_START;
 	mat = buildBoardMatrix();
 	if (mat == NULL)
